@@ -423,8 +423,11 @@ Give your members a warm welcome with the greetings module! Or a sad goodbye... 
 """
 __helpbtns__ = (
         [[
+        InlineKeyboardButton('Markdown ', callback_data="_mdown"),
+        InlineKeyboardButton('Fillings', callback_data='_fillings')
+        ],
+        [
         InlineKeyboardButton('captcha', callback_data="_filling"),
-        InlineKeyboardButton('Formatting', callback_data='_mdownsl')
+        InlineKeyboardButton('Random', callback_data="_random")
         ]]
 )
-
